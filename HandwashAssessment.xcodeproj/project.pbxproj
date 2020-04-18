@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D04537D2443D392002E7358 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D04537C2443D392002E7358 /* AppDelegate.swift */; };
+		2D04537F2443D392002E7358 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D04537E2443D392002E7358 /* ViewController.swift */; };
+		2D0453822443D392002E7358 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0453802443D392002E7358 /* Main.storyboard */; };
+		2D0453842443D393002E7358 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0453832443D393002E7358 /* Assets.xcassets */; };
+		2D0453872443D393002E7358 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0453852443D393002E7358 /* LaunchScreen.storyboard */; };
+		2D04538C2443D393002E7358 /* HandwashAssessment WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2D04538B2443D393002E7358 /* HandwashAssessment WatchKit App.app */; };
+		2D0453922443D393002E7358 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0453902443D393002E7358 /* Interface.storyboard */; };
+		2D0453942443D394002E7358 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0453932443D394002E7358 /* Assets.xcassets */; };
+		2D04539B2443D394002E7358 /* HandwashAssessment WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2D04539A2443D394002E7358 /* HandwashAssessment WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2D0453A02443D394002E7358 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D04539F2443D394002E7358 /* InterfaceController.swift */; };
+		2D0453A22443D394002E7358 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0453A12443D394002E7358 /* ExtensionDelegate.swift */; };
+		2D0453A42443D394002E7358 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0453A32443D394002E7358 /* NotificationController.swift */; };
+		2D0453A62443D394002E7358 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0453A52443D394002E7358 /* Assets.xcassets */; };
+		2D0453BD2443D81D002E7358 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0453BA2443D81D002E7358 /* MotionManager.swift */; };
+		2D0453BE2443D81D002E7358 /* RunningBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0453BB2443D81D002E7358 /* RunningBuffer.swift */; };
+		2D0453BF2443D81D002E7358 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0453BC2443D81D002E7358 /* WorkoutManager.swift */; };
+		2D0453C12443D8D0002E7358 /* main_file.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2D0453C02443D8D0002E7358 /* main_file.mlmodel */; };
+		2D0453C324445681002E7358 /* HelperMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0453C224445681002E7358 /* HelperMethods.swift */; };
+		2D0453CA244A1BEC002E7358 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0453C9244A1BEC002E7358 /* HealthKit.framework */; };
+		2D0453CC244A1BF8002E7358 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0453CB244A1BF8002E7358 /* HealthKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D04538D2443D393002E7358 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D0453712443D392002E7358 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D04538A2443D393002E7358;
+			remoteInfo = "HandwashAssessment WatchKit App";
+		};
+		2D04539C2443D394002E7358 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D0453712443D392002E7358 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D0453992443D394002E7358;
+			remoteInfo = "HandwashAssessment WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2D0453AE2443D394002E7358 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2D04539B2443D394002E7358 /* HandwashAssessment WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D0453B22443D394002E7358 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2D04538C2443D393002E7358 /* HandwashAssessment WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2D0453792443D392002E7358 /* HandwashAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandwashAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D04537C2443D392002E7358 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2D04537E2443D392002E7358 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2D0453812443D392002E7358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D0453832443D393002E7358 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D0453862443D393002E7358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D0453882443D393002E7358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D04538B2443D393002E7358 /* HandwashAssessment WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HandwashAssessment WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D0453912443D393002E7358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2D0453932443D394002E7358 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D0453952443D394002E7358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D04539A2443D394002E7358 /* HandwashAssessment WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HandwashAssessment WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D04539F2443D394002E7358 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2D0453A12443D394002E7358 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		2D0453A32443D394002E7358 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		2D0453A52443D394002E7358 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D0453A72443D394002E7358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D0453A82443D394002E7358 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		2D0453B62443D41B002E7358 /* HandwashAssessment.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HandwashAssessment.entitlements; sourceTree = "<group>"; };
+		2D0453BA2443D81D002E7358 /* MotionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		2D0453BB2443D81D002E7358 /* RunningBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunningBuffer.swift; sourceTree = "<group>"; };
+		2D0453BC2443D81D002E7358 /* WorkoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
+		2D0453C02443D8D0002E7358 /* main_file.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = main_file.mlmodel; path = ../../../../../Downloads/main_file.mlmodel; sourceTree = "<group>"; };
+		2D0453C224445681002E7358 /* HelperMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperMethods.swift; sourceTree = "<group>"; };
+		2D0453C4244A1B8B002E7358 /* HandwashAssessment WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HandwashAssessment WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		2D0453C9244A1BEC002E7358 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		2D0453CB244A1BF8002E7358 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.3.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D0453762443D392002E7358 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D0453CA244A1BEC002E7358 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D0453972443D394002E7358 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D0453CC244A1BF8002E7358 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D0453702443D392002E7358 = {
+			isa = PBXGroup;
+			children = (
+				2D04537B2443D392002E7358 /* HandwashAssessment */,
+				2D04538F2443D393002E7358 /* HandwashAssessment WatchKit App */,
+				2D04539E2443D394002E7358 /* HandwashAssessment WatchKit Extension */,
+				2D04537A2443D392002E7358 /* Products */,
+				2D0453B72443D41B002E7358 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2D04537A2443D392002E7358 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D0453792443D392002E7358 /* HandwashAssessment.app */,
+				2D04538B2443D393002E7358 /* HandwashAssessment WatchKit App.app */,
+				2D04539A2443D394002E7358 /* HandwashAssessment WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D04537B2443D392002E7358 /* HandwashAssessment */ = {
+			isa = PBXGroup;
+			children = (
+				2D0453B62443D41B002E7358 /* HandwashAssessment.entitlements */,
+				2D04537C2443D392002E7358 /* AppDelegate.swift */,
+				2D04537E2443D392002E7358 /* ViewController.swift */,
+				2D0453802443D392002E7358 /* Main.storyboard */,
+				2D0453832443D393002E7358 /* Assets.xcassets */,
+				2D0453852443D393002E7358 /* LaunchScreen.storyboard */,
+				2D0453882443D393002E7358 /* Info.plist */,
+			);
+			path = HandwashAssessment;
+			sourceTree = "<group>";
+		};
+		2D04538F2443D393002E7358 /* HandwashAssessment WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				2D0453902443D393002E7358 /* Interface.storyboard */,
+				2D0453932443D394002E7358 /* Assets.xcassets */,
+				2D0453952443D394002E7358 /* Info.plist */,
+			);
+			path = "HandwashAssessment WatchKit App";
+			sourceTree = "<group>";
+		};
+		2D04539E2443D394002E7358 /* HandwashAssessment WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2D0453C4244A1B8B002E7358 /* HandwashAssessment WatchKit Extension.entitlements */,
+				2D0453BA2443D81D002E7358 /* MotionManager.swift */,
+				2D0453BB2443D81D002E7358 /* RunningBuffer.swift */,
+				2D0453C02443D8D0002E7358 /* main_file.mlmodel */,
+				2D0453BC2443D81D002E7358 /* WorkoutManager.swift */,
+				2D04539F2443D394002E7358 /* InterfaceController.swift */,
+				2D0453A12443D394002E7358 /* ExtensionDelegate.swift */,
+				2D0453A32443D394002E7358 /* NotificationController.swift */,
+				2D0453A52443D394002E7358 /* Assets.xcassets */,
+				2D0453A72443D394002E7358 /* Info.plist */,
+				2D0453A82443D394002E7358 /* PushNotificationPayload.apns */,
+				2D0453C224445681002E7358 /* HelperMethods.swift */,
+			);
+			path = "HandwashAssessment WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		2D0453B72443D41B002E7358 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D0453CB244A1BF8002E7358 /* HealthKit.framework */,
+				2D0453C9244A1BEC002E7358 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D0453782443D392002E7358 /* HandwashAssessment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D0453B32443D394002E7358 /* Build configuration list for PBXNativeTarget "HandwashAssessment" */;
+			buildPhases = (
+				2D0453752443D392002E7358 /* Sources */,
+				2D0453762443D392002E7358 /* Frameworks */,
+				2D0453772443D392002E7358 /* Resources */,
+				2D0453B22443D394002E7358 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D04538E2443D393002E7358 /* PBXTargetDependency */,
+			);
+			name = HandwashAssessment;
+			productName = HandwashAssessment;
+			productReference = 2D0453792443D392002E7358 /* HandwashAssessment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D04538A2443D393002E7358 /* HandwashAssessment WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D0453AF2443D394002E7358 /* Build configuration list for PBXNativeTarget "HandwashAssessment WatchKit App" */;
+			buildPhases = (
+				2D0453892443D393002E7358 /* Resources */,
+				2D0453AE2443D394002E7358 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D04539D2443D394002E7358 /* PBXTargetDependency */,
+			);
+			name = "HandwashAssessment WatchKit App";
+			productName = "HandwashAssessment WatchKit App";
+			productReference = 2D04538B2443D393002E7358 /* HandwashAssessment WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2D0453992443D394002E7358 /* HandwashAssessment WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D0453AB2443D394002E7358 /* Build configuration list for PBXNativeTarget "HandwashAssessment WatchKit Extension" */;
+			buildPhases = (
+				2D0453962443D394002E7358 /* Sources */,
+				2D0453972443D394002E7358 /* Frameworks */,
+				2D0453982443D394002E7358 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HandwashAssessment WatchKit Extension";
+			productName = "HandwashAssessment WatchKit Extension";
+			productReference = 2D04539A2443D394002E7358 /* HandwashAssessment WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D0453712443D392002E7358 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Sirat Samyoun";
+				TargetAttributes = {
+					2D0453782443D392002E7358 = {
+						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					2D04538A2443D393002E7358 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					2D0453992443D394002E7358 = {
+						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 1;
+							};
+							com.apple.HealthKit.watchos = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 2D0453742443D392002E7358 /* Build configuration list for PBXProject "HandwashAssessment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D0453702443D392002E7358;
+			productRefGroup = 2D04537A2443D392002E7358 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D0453782443D392002E7358 /* HandwashAssessment */,
+				2D04538A2443D393002E7358 /* HandwashAssessment WatchKit App */,
+				2D0453992443D394002E7358 /* HandwashAssessment WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D0453772443D392002E7358 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D0453872443D393002E7358 /* LaunchScreen.storyboard in Resources */,
+				2D0453842443D393002E7358 /* Assets.xcassets in Resources */,
+				2D0453822443D392002E7358 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D0453892443D393002E7358 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D0453942443D394002E7358 /* Assets.xcassets in Resources */,
+				2D0453922443D393002E7358 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D0453982443D394002E7358 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D0453A62443D394002E7358 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D0453752443D392002E7358 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D04537F2443D392002E7358 /* ViewController.swift in Sources */,
+				2D04537D2443D392002E7358 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D0453962443D394002E7358 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D0453BE2443D81D002E7358 /* RunningBuffer.swift in Sources */,
+				2D0453A42443D394002E7358 /* NotificationController.swift in Sources */,
+				2D0453C324445681002E7358 /* HelperMethods.swift in Sources */,
+				2D0453A22443D394002E7358 /* ExtensionDelegate.swift in Sources */,
+				2D0453A02443D394002E7358 /* InterfaceController.swift in Sources */,
+				2D0453C12443D8D0002E7358 /* main_file.mlmodel in Sources */,
+				2D0453BD2443D81D002E7358 /* MotionManager.swift in Sources */,
+				2D0453BF2443D81D002E7358 /* WorkoutManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D04538E2443D393002E7358 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D04538A2443D393002E7358 /* HandwashAssessment WatchKit App */;
+			targetProxy = 2D04538D2443D393002E7358 /* PBXContainerItemProxy */;
+		};
+		2D04539D2443D394002E7358 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D0453992443D394002E7358 /* HandwashAssessment WatchKit Extension */;
+			targetProxy = 2D04539C2443D394002E7358 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2D0453802443D392002E7358 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D0453812443D392002E7358 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2D0453852443D393002E7358 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D0453862443D393002E7358 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2D0453902443D393002E7358 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D0453912443D393002E7358 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D0453A92443D394002E7358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2D0453AA2443D394002E7358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D0453AC2443D394002E7358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "HandwashAssessment WatchKit Extension/HandwashAssessment WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26WZ8ZNC53;
+				INFOPLIST_FILE = "HandwashAssessment WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.virginia.edu.HandwashAssessment.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		2D0453AD2443D394002E7358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "HandwashAssessment WatchKit Extension/HandwashAssessment WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26WZ8ZNC53;
+				INFOPLIST_FILE = "HandwashAssessment WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.virginia.edu.HandwashAssessment.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		2D0453B02443D394002E7358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26WZ8ZNC53;
+				IBSC_MODULE = HandwashAssessment_WatchKit_Extension;
+				INFOPLIST_FILE = "HandwashAssessment WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.virginia.edu.HandwashAssessment.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		2D0453B12443D394002E7358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26WZ8ZNC53;
+				IBSC_MODULE = HandwashAssessment_WatchKit_Extension;
+				INFOPLIST_FILE = "HandwashAssessment WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.virginia.edu.HandwashAssessment.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		2D0453B42443D394002E7358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HandwashAssessment/HandwashAssessment.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26WZ8ZNC53;
+				INFOPLIST_FILE = HandwashAssessment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.virginia.edu.HandwashAssessment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D0453B52443D394002E7358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HandwashAssessment/HandwashAssessment.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26WZ8ZNC53;
+				INFOPLIST_FILE = HandwashAssessment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.virginia.edu.HandwashAssessment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D0453742443D392002E7358 /* Build configuration list for PBXProject "HandwashAssessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D0453A92443D394002E7358 /* Debug */,
+				2D0453AA2443D394002E7358 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D0453AB2443D394002E7358 /* Build configuration list for PBXNativeTarget "HandwashAssessment WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D0453AC2443D394002E7358 /* Debug */,
+				2D0453AD2443D394002E7358 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D0453AF2443D394002E7358 /* Build configuration list for PBXNativeTarget "HandwashAssessment WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D0453B02443D394002E7358 /* Debug */,
+				2D0453B12443D394002E7358 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D0453B32443D394002E7358 /* Build configuration list for PBXNativeTarget "HandwashAssessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D0453B42443D394002E7358 /* Debug */,
+				2D0453B52443D394002E7358 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D0453712443D392002E7358 /* Project object */;
+}

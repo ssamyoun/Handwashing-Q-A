@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HandwashAssessment_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" height="32" alignment="left" title="Scan Beacon" id="f6Q-fa-Gl8">
+                            <color key="backgroundColor" red="0.1589495199" green="0.48761334200000001" blue="0.0093126037269999993" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="ScanAction" destination="AgC-eL-Hgc" id="dQ2-HL-qtK"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="31" alignment="left" title="Stop Scan" id="EAx-p0-itX">
+                            <color key="backgroundColor" red="0.79618685229999997" green="0.42414712462101317" blue="0.21918949658207537" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="StopScan" destination="AgC-eL-Hgc" id="aLh-kt-kh5"/>
+                            </connections>
+                        </button>
+                        <group width="1" height="64" alignment="left" id="alj-0P-kmH">
+                            <items>
+                                <button width="67" height="47" alignment="left" verticalAlignment="center" title="Start" id="mrc-3o-5zL">
+                                    <color key="backgroundColor" red="0.064477887299999995" green="0.24216288629999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <connections>
+                                        <action selector="HWStartAction" destination="AgC-eL-Hgc" id="cGP-80-G57"/>
+                                    </connections>
+                                </button>
+                                <button width="62" height="42" alignment="right" verticalAlignment="center" title="End" id="jqF-Tb-HIe">
+                                    <color key="backgroundColor" red="1" green="0.10913012909516606" blue="0.093453013982081612" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <connections>
+                                        <action selector="HWEndAction" destination="AgC-eL-Hgc" id="Mfh-VH-UhD"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Results" id="I0z-sO-u3N">
+                            <color key="backgroundColor" red="0.48761334200000001" green="0.46494570280000003" blue="0.087787459779999993" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="ShowResults" destination="AgC-eL-Hgc" id="3OQ-OW-tYb"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="219.52173913043478" y="330.89285714285717"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="HandwashAssessment_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="HandwashAssessment_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+    </scenes>
+</document>
