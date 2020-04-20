@@ -43,6 +43,9 @@ class InterfaceController: WKInterfaceController,WorkoutManagerDelegate,CBCentra
     var myUtterance = AVSpeechUtterance(string: "")
     
     var resultsArray = [Int]()//[[Double]]()
+    var feedBackArray = [String]()
+    var startTime = 0.0
+    var endTime = 0.0
     
     func startBeaconSensingAndRemind(){
         WKInterfaceDevice.current().play(.success)
@@ -109,6 +112,40 @@ class InterfaceController: WKInterfaceController,WorkoutManagerDelegate,CBCentra
             }
         }
         return (maxIdx + 1)
+    }
+    
+    
+    
+    func callformalAndFeedback(){
+        print("resultsArray-->", resultsArray)
+        feedBackArray = [String]()
+        let duration = endTime - startTime
+        if (duration < 20){
+            feedBackArray.append("Didn't wash for 20 seconds")
+        }
+        if (!(resultsArray.first == 1)){
+            feedBackArray.append("Didn't rub hands properly")
+        }
+        if (!(resultsArray.contains(2)) && !(resultsArray.contains(3))){
+            feedBackArray.append("Didn't put palm over hands properly")
+        }
+        if (!(resultsArray.contains(4))){
+            feedBackArray.append("Didn't interlace fingers properly")
+        }
+        if (!(resultsArray.contains(5)) && !(resultsArray.contains(6))){ 
+            feedBackArray.append("Didn't clean fingertips properly")
+        }
+        if (!(resultsArray.contains(7)) && !(resultsArray.contains(8))){
+            feedBackArray.append("Didn't rub thumbs properly")
+        }
+        if (!(resultsArray.contains(9)) && !(resultsArray.contains(10))){
+            feedBackArray.append("Didn't put fingers on palms properly")
+        }
+        if(feedBackArray.isEmpty){
+            feedBackArray.append("Great Job! You washed hands perfectly")
+        }
+        let utter = feedBackArray.joined(separator: ", ")
+        utterSentence(line: utter)
     }
     
     func didUpdateMotion(_ manager: WorkoutManager, magnX:Double?, magnY:Double?, magnZ:Double?, gravX:Double?, gravY:Double?, gravZ:Double?, rotatX:Double?, rotatY:Double?, rotatZ:Double?, useraccX:Double?, useraccY:Double?, useraccZ:Double?, attdW:Double?, attdX:Double?, attdY:Double?, attdZ:Double?, timestamp: Int64) {
@@ -283,14 +320,17 @@ class InterfaceController: WKInterfaceController,WorkoutManagerDelegate,CBCentra
     }
     
     @IBAction func HWStartAction() {
+        startTime = Double(Date().millisecondsSince1970/1000)
         startCollectIMU()
     }
     
     @IBAction func HWEndAction() {
         WKInterfaceDevice.current().play(.success)
         WKInterfaceDevice.current().play(.click)
+        endTime = Double(Date().millisecondsSince1970/1000)
         workoutManager.stopWorkout()
         getDataAndProcessInModel()
+        callformalAndFeedback()
     }
     
     @IBAction func ShowResults() {
